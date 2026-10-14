@@ -12,7 +12,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,7 +21,6 @@ import lombok.ToString;
 @Data
 @Builder
 @NoArgsConstructor
-@AllArgsConstructor
 public class Curso {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,4 +32,11 @@ public class Curso {
     @JoinColumn(name = "categoria_id")
     @ToString.Exclude
     private Categoria categoria;
+
+    public Curso(Long id, String nome, Integer cargaHoraria, Categoria categoria) {
+        this.id = id;
+        this.nome = nome;
+        this.cargaHoraria = cargaHoraria;
+        this.categoria = categoria;
+    }
 }

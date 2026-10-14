@@ -11,7 +11,6 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,7 +19,6 @@ import lombok.ToString;
 @Entity
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
 public class Categoria {
     @Id
@@ -30,4 +28,10 @@ public class Categoria {
     @OneToMany(mappedBy = "categoria"/* , fetch = FetchType.EAGER */)
 
     private List<Curso> cursos;
+
+    public Categoria(Long id, String nome, List<Curso> cursos) {
+        this.id = id;
+        this.nome = nome;
+        this.cursos = cursos;
+    }
 }
