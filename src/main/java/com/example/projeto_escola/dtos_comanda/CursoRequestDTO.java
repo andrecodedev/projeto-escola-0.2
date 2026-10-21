@@ -1,4 +1,4 @@
-package com.example.projeto_escola.dtos;
+package com.example.projeto_escola.dtos_comanda;
 
 import lombok.Builder;
 import lombok.Data;

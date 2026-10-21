@@ -1,11 +1,11 @@
-package com.example.projeto_escola.repositories;
+package com.example.projeto_escola.repositories_estoque;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.example.projeto_escola.domains.Categoria;
+import com.example.projeto_escola.domains_pratos.Categoria;
 
 public interface CategoriaRepository
         extends JpaRepository<Categoria, Long> {

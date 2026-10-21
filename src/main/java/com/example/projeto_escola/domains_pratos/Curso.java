@@ -1,4 +1,4 @@
-package com.example.projeto_escola.domains;
+package com.example.projeto_escola.domains_pratos;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;

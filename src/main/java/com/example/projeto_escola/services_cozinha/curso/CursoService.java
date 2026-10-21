@@ -1,8 +1,8 @@
-package com.example.projeto_escola.services;
+package com.example.projeto_escola.services_cozinha.curso;
 
 import java.util.List;
 
-import com.example.projeto_escola.dtos.CursoRequestDTO;
+import com.example.projeto_escola.dtos_comanda.CursoRequestDTO;
 
 public interface CursoService {
     CursoRequestDTO inserir(CursoRequestDTO cursoRequestDTO);

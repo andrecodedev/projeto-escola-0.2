@@ -1,11 +1,11 @@
-package com.example.projeto_escola.controllers;
+package com.example.projeto_escola.controllers_garcom;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.projeto_escola.dtos.CursoRequestDTO;
-import com.example.projeto_escola.services.CursoService;
+import com.example.projeto_escola.dtos_comanda.CursoRequestDTO;
+import com.example.projeto_escola.services_cozinha.curso.CursoService;
 
 import java.util.List;
 

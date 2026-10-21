@@ -1,15 +1,15 @@
-package com.example.projeto_escola.services;
+package com.example.projeto_escola.services_cozinha.curso;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.example.projeto_escola.configs.exceptions.RegraNegocioException;
-import com.example.projeto_escola.domains.Categoria;
-import com.example.projeto_escola.domains.Curso;
-import com.example.projeto_escola.dtos.CursoRequestDTO;
-import com.example.projeto_escola.repositories.CategoriaRepository;
-import com.example.projeto_escola.repositories.CursoRepository;
+import com.example.projeto_escola.configs_gerente.exceptions.RegraNegocioException;
+import com.example.projeto_escola.domains_pratos.Categoria;
+import com.example.projeto_escola.domains_pratos.Curso;
+import com.example.projeto_escola.dtos_comanda.CursoRequestDTO;
+import com.example.projeto_escola.repositories_estoque.CategoriaRepository;
+import com.example.projeto_escola.repositories_estoque.CursoRepository;
 
 @Service
 public class CursoServiceImpl implements CursoService {
