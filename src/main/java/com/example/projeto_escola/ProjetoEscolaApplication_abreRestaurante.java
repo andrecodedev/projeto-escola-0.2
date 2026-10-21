@@ -12,7 +12,7 @@ import com.example.projeto_escola.repositories_estoque.CategoriaRepository;
 import com.example.projeto_escola.repositories_estoque.CursoRepository;
 
 @SpringBootApplication
-public class ProjetoEscolaApplication {
+public class ProjetoEscolaApplication_abreRestaurante {
 
 	@Bean
 	public CommandLineRunner init(
@@ -37,7 +37,7 @@ public class ProjetoEscolaApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjetoEscolaApplication.class, args);
+		SpringApplication.run(ProjetoEscolaApplication_abreRestaurante.class, args);
 	}
 
 }
